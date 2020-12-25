@@ -1,0 +1,6 @@
+[submodule "bitcoin"]
+	path = bitcoin
+	url = https://github.com/bitcoin/bitcoin
+[submodule "Delphicoin"]
+	path = Delphicoin
+	url = https://github.com/SkybuckFlying/Delphicoin
