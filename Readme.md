@@ -17,4 +17,19 @@ https://github.com/SkybuckFlying/Delphicoin/
 
 https://github.com/bitcoin/bitcoin
 
+## Get started as follows:
+
+1. Start git bash.
+
+2. Clone Bitcoin2Delphi locally to for example C:\SourceCode as follows:
+
+cd C:\SourceCode
+    
+git clone https://github.com/SkybuckFlying/Bitcoin2Delphi
+
+3. Clone/pull in the submodules:
+
+git submodule update --init --recursive
+
+(Currently the heads of submodules will be in a detach head state, looking into this...)
 
