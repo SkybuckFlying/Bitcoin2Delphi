@@ -19,7 +19,7 @@ Together they are git modules/pointers towards two other repositories at a certa
 The bitcoin submodule links to bitcoin (core) repository at https://github.com/bitcoin/bitcoin at a certain commit of that repository.  
 The delphicoin submodule links to Delphicoin repository at https://github.com/SkybuckFlying/Delphicoin at a certain commit of that repository.  
 
-The local folders are:
+The local folders are:  
 /bitcoin  
 /Delphicoin  
 
