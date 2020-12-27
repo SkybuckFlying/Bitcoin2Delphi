@@ -35,14 +35,16 @@ git submodule init
 
 git submodule update 
 
-(Currently the heads of submodules will be in a detach head state)
+The head of the bitcoin submodule will be in a detach head state. This is normal since the delphi port will be based on an older commit point.
+To bring back the head in an attached state use git switch master in the bitcoin folder. However this will update the bitcoin master branch head pointer to the latest bitcoin commits which is not something you should do. To undo this go backto bitcoin2delphi folder and run git submodule update again to revert back to the commit as indicated in the super project/contained repository.
+To perform experiments on bitcoin code itself simply created a new branch on the detached head state for example git branch BitcoinExperiment
 
-4. To get head back under control for submodule bitcoin:
+4. To get head back under control for submodule bitcoin, this should not be done because this updates bitcoin beyond the commit that we are porting from, see above how to fix.
 
 cd "C:/SourceCode/Bitcoin2Delphi/bitcoin"
 git switch master
 
-5. To get head back under control for submodule Delphicoin:
+5. To get head back under control for submodule Delphicoin, this switches to latest Delphicoin version, assuming a git fetch was done.
 
 cd "C:/SourceCode/Bitcoin2Delphi/Delphicoin"
 git switch main
@@ -85,3 +87,12 @@ Example (using E: drive):
     Previous HEAD position was daa78b4 src/Coins added
     Switched to branch 'main'
     Your branch is up to date with 'origin/main'.
+    
+    to fix bitcoin so it reverts back to the commit we are porting from, execute submodule update again from bitcoin2delphi folder:
+    $ cd "E:/SourceCode/Bitcoin2Delphi"
+    $ git submodule update
+    Submodule path 'bitcoin': checked out 'f656165e9c0d09e654efabd56e6581638e35c26c'
+    
+    
+
+    
