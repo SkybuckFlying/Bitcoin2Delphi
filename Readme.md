@@ -23,17 +23,14 @@ Step 1. Start git bash.
   
 Step 2. Clone Bitcoin2Delphi locally to for example C:\SourceCode as follows:  
   
-cd "C:/SourceCode"  
-    
-git clone https://github.com/SkybuckFlying/Bitcoin2Delphi  
+    cd "C:/SourceCode"  
+    git clone https://github.com/SkybuckFlying/Bitcoin2Delphi  
   
 Step 3. Clone/pull in the submodules:  
   
-cd "C:/SourceCode/Bitcoin2Delphi"  
-  
-git submodule init  
-  
-git submodule update   
+    cd "C:/SourceCode/Bitcoin2Delphi"  
+    git submodule init  
+    git submodule update   
   
 The head of the bitcoin submodule will be in a detach head state. This is normal since the delphi port will be based on an older commit point.  
 To bring back the head in an attached state use git switch master in the bitcoin folder. However this will update the bitcoin master branch head pointer to the latest bitcoin commits which is not something you should do. To undo this go backto bitcoin2delphi folder and run git submodule update again to revert back to the commit as indicated in the super project/contained repository.   
@@ -41,18 +38,19 @@ To perform experiments on bitcoin code itself simply created a new branch on the
   
 Step 4. To get head back under control for submodule bitcoin, this should not be done because this updates bitcoin beyond the commit that we are porting from, see above how to fix.  
   
-cd "C:/SourceCode/Bitcoin2Delphi/bitcoin"  
-git switch master  
+    cd "C:/SourceCode/Bitcoin2Delphi/bitcoin"  
+    git switch master  
   
 Step 5. To get head back under control for submodule Delphicoin, this switches to latest Delphicoin version, assuming a git fetch was done.  
   
-cd "C:/SourceCode/Bitcoin2Delphi/Delphicoin"  
-git switch main  
+    cd "C:/SourceCode/Bitcoin2Delphi/Delphicoin"  
+    git switch main  
 
-Step 6. To get head back to super project pointers go back to super project folder, this will cause heads to go back in detached state possiby:
-cd "C:/SourceCode/Bitcoin2Delphi"
-git submodule update 
-  
+Step 6. To get head back to super project pointers go back to super project folder, this will cause heads to go back in detached state possiby:  
+
+    cd "C:/SourceCode/Bitcoin2Delphi"
+    git submodule update 
+      
 Example (using E: drive):  
   
     $ cd "E:/SourceCode"
@@ -97,4 +95,4 @@ Example (using E: drive):
     $ git submodule update
     Submodule path 'bitcoin': checked out 'f656165e9c0d09e654efabd56e6581638e35c26c'
     
-     
+    
