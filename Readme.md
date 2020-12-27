@@ -1,13 +1,20 @@
 # Bitcoin2Delphi  
   
-"Git Superproject" for conversion of Bitcoin/C/C++ to Delphicoin/Pascal/Delphi
+"Git Superproject" for conversion of Bitcoin/C/C++ to Delphicoin/Pascal/Delphi  
 
-Two submodules exist:
+This superproject contains two submodules:
 
-1. bitcoin
-2. Delphicoin 
+1. bitcoin  
+2. Delphicoin  
 
-These are git pointers towards two other repositories at a certain commit hash/point of those repositories.
+These two submodules can be seen on the code page/tab of Bitcoin2Delphi like so/example:  
+  
+Delphicoin @ 3a966d7  
+bitcoin @ 02cf20b  
+
+The numbers behind the @ are git commits/hashes
+
+Together they are git modules/pointers towards two other repositories at a certain commit hash/point of those repositories.
 
 The bitcoin submodule links to bitcoin (core) repository at https://github.com/bitcoin/bitcoin at a certain commit of that repository.
 The delphicoin submodule links to Delphicoin repository at https://github.com/SkybuckFlying/Delphicoin at a certain commit of that repository.
