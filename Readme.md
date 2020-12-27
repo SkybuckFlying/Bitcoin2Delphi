@@ -1,13 +1,26 @@
 # Bitcoin2Delphi  
   
-## Superproject for conversion of Bitcoin/C/C++ to Pascal/Delphi  
-  
-This git repository is the super/maintenance repository to guide  
-the conversion from bitcoin/c/c++ to pascal/delphi programming language !  
-  
-The original bitcoin is added as a submodule /bitcoin.  
+"Git Superproject" for conversion of Bitcoin/C/C++ to Delphicoin/Pascal/Delphi
 
-The to be converted source code will be stored in /delphicoin.  
+Two submodules exist:
+
+1. bitcoin
+2. Delphicoin 
+
+These are git pointers towards two other repositories at a certain commit hash/point of those repositories.
+
+The bitcoin submodule links to bitcoin (core) repository at https://github.com/bitcoin/bitcoin at a certain commit of that repository.
+The delphicoin submodule links to Delphicoin repository at https://github.com/SkybuckFlying/Delphicoin at a certain commit of that repository.
+
+The local folders are:
+/bitcoin
+/Delphicoin
+
+The bitcoin c/c++ source code is to be converted to Pascal/Delphi programming language.
+
+There are certain rules to follow to do so. Please visit the Delphicoin repository for further details.
+
+The goal of Delphicoin is to stay compatible with Bitcoin (and use the same blockchain) but perhaps with improvements over time.
   
 # Delphicoin  
   
