@@ -95,4 +95,29 @@ Example (using E: drive):
     $ git submodule update
     Submodule path 'bitcoin': checked out 'f656165e9c0d09e654efabd56e6581638e35c26c'
     
+## Recommended workflow:
+
+The recommended workflow after initially getting things working as described above:
+
+1. Update Bitcoin2Delphi master branch
+
+    cd "E:/SourceCode/Bitcoin2Delpi"  
+    git pull origin master  
+
+2. Update submodules
+
+    git submodule update
     
+3. Change folder to submodule Delphicoin
+
+    cd "E:/SourceCode/Bitcoin2Delphi/Delphicoin"
+    
+4. Switch to main branch of Delphicoin
+    
+    git switch main
+    
+5. Merge changes of remote submodule Delphicoin into local submodule Delphicoin working copy
+ 
+    git pull origin main
+ 
+ 
