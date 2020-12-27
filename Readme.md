@@ -1,6 +1,6 @@
 # Bitcoin2Delphi  
   
-"Git Superproject" for conversion of Bitcoin/C/C++ to Delphicoin/Pascal/Delphi  
+"Git Superproject" repository for assistency of Bitcoin/C/C++ to Delphicoin/Pascal/Delphi conversion.
 
 This superproject contains two submodules:
 
@@ -29,11 +29,11 @@ There are certain rules to follow to do so. Please visit the Delphicoin reposito
 
 The goal of Delphicoin is to stay compatible with Bitcoin (and use the same blockchain) but perhaps with improvements over time.  
   
-# Delphicoin  
+# Delphicoin repository:
   
 https://github.com/SkybuckFlying/Delphicoin/  
   
-# Bitcoin   
+# Bitcoin repository:
   
 https://github.com/bitcoin/bitcoin  
   
